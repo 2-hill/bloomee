@@ -27,7 +27,7 @@ const Header = () => {
       <Container>
         <Flex>
           <HeaderTextGroup>
-            <Subtitle>Personal Finance</Subtitle>
+            <Subtitle>Bloomee Marketplace</Subtitle>
             <h1>
               Healthcare Pros and helpers,
               <br />
