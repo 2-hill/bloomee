@@ -29,12 +29,12 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>Bloomee Marketplace</Subtitle>
             <h1>
-              Healthcare Pros and helpers,
+              Healthcare Pros,
               <br />
               around you
             </h1>
             <h2>
-              We're building next generation personal finance tools. Sign up to
+              We're building next generation healthcarre marketplace. Sign up to
               get early access.
             </h2>
             <HeaderForm onSubmit={handleSubmit}>
