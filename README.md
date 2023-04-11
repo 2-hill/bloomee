@@ -1,95 +1,65 @@
-# React.js landing page template v2
+<p align="center">
+  <img alt="preview of page" src="https://github.com/gillkyle/images/blob/master/Screen%20Shot%202019-03-21%20at%209.14.46%20PM.png" />
+</p>
+<h1 align="center">
+  Gatsby Landing Page Starter
+</h1>
 
-## <a href="https://react-landing-page-template-2021.vercel.app/"> LIVE DEMO</a>
+A simple, minimal, easy-to-use landing page starter without all sorts of bells and whistles bolted on that you'll just have to strip out later. Create a super fast, beautiful landing page from a barebones template with a single page that already looks good.
 
-<img src="public/assets/gifs/demo.gif" width="100%" height="auto" />
+## Prerequisites
 
-### Description
+If you do not have the Gatsby CLI installed yet, do it first.
 
-This is a React.js/Next.js based landing page plug-n-play template, ideal for startups/companies/service providers wanting to showcase their vision in a single page sleek and modern landing page.
-
-### Features
-
-- 📱  Responsive design
-- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
-
-- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (w/ JIT mode)
-
-- 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
-
-- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
-
-- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript
-
-- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
-
-- 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
-
-Built-in feature from Next.js:
-
-- ☕ Minify HTML & CSS
-- 💨 Live reload
-- ✅ Cache busting
-
-### Make it your own
-
-#### 1. Clone repo
-
-```
-git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
-cd react-landing-page-template-2021
-yarn
+```bash
+npm install --global gatsby-cli
 ```
 
-Then, you can run locally in development mode with live reload:
+The Gatsby CLI uses Node and npm which you will also need installed. More information can be found on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one/).
 
-```
-yarn dev
-```
+## 🚀 Getting Started
 
-Open <http://localhost:3000> with your favorite browser to see your project.
+Install the starter using the Gatsby new command.
 
-#### 2. Add your own content
-
- 1. **Content**: change the configuration in the ```src/config/index.json``` file to change the content of the landing page to match your use ```src/config/index.json```  folder and .
- 2. **Images**:  add any images/icons..etc to the ```public/assets/images```  folder and update their reference source in ```src/config/index.json```.
- 3. **Theme**:  to change the theme, update the ```tailwind.config.js```  file to match the theme of your branding. [Tutorial](https://tailwindcss.com/docs/configuration).
-
-#### 3. Deploy to production
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fissaafalkattan%2Freact-landing-page-template-2021)
-
-##### Deploy manually
-
-You can see the results locally in production mode with:
-
-  ```
-yarn build
-yarn start
+```bash
+gatsby new landing-page https://github.com/gillkyle/gatsby-starter-landing-page.git
 ```
 
-The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
+Navigate into the project directory and launch the site.
 
-You can create an optimised production build with:
-
-```
-yarn build-prod
+```bash
+cd landing-page && gatsby develop
 ```
 
-### Contributions
+The site will be opened up in your default browser on http://localhost:8000
 
-Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
+Edit code in the `/src`, save your changes, and they'll reload instantly in the browser.
 
-### License
+## 🧐 What's inside?
 
-Licensed under the MIT License, Copyright © 2021
-  
+The minimal landing page starter comes with a few plugins installed already, but it's main focus is on staying simple and looking clean. These things are included by default:
 
-## Liked this template? <a href="https://www.buymeacoffee.com/issaaf">Buy me a coffee ☕️</a>
+- 🖼 Gatsby Image: images added to the `src/images` folder are automatically optimized by the `gatsby-image` plugin and can be pulled into components with lazy loading and blur up effects
+- 📊 Analytics: add your Google Analytics tracking id to `gatsby-config.js` to automatically begin tracking visitors to the site
+- 🗺 Sitemap: any new pages added to the site are automically assembled together into a sitemap through `gatsby-plugin-sitemap`
+- 🎨 Color Theme: the `src/styles/constants.js` file contains a set of colors and default styles that are applied inline to components on the site that can be overriden with your own styles
 
+## 🧪 Experiment
 
+If you want to try playing with the source code in an online playground you can open the repo in Codesandox with this button.
 
+[![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gillkyle/gatsby-starter-landing-page/tree/master/)
 
----
+## 💫 Deploy
 
-### Looking for v1? <a href="https://github.com/issaafalkattan/React-Landing-Page-Template">V1</a>
+If you just want to see a site online real fast you can deploy a copy of the site to Netlify with this button.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gillkyle/gatsby-starter-landing-page)
+
+To create an optimized build of the site run this command
+
+```bash
+gatsby build
+```
+
+A `/public` folder will be assembled that can be deployed to a service like Netlify, Surge, GitHub Pages, AWS S3, Firebase hosting, or your own file server.
