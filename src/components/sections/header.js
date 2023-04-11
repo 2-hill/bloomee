@@ -29,9 +29,9 @@ const Header = () => {
           <HeaderTextGroup>
             <Subtitle>Personal Finance</Subtitle>
             <h1>
-              All your money,
+              Healthcare Pros and helpers,
               <br />
-              one account
+              around you
             </h1>
             <h2>
               We're building next generation personal finance tools. Sign up to
