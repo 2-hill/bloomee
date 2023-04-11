@@ -1,65 +1,101 @@
-<p align="center">
-  <img alt="preview of page" src="https://github.com/gillkyle/images/blob/master/Screen%20Shot%202019-03-21%20at%209.14.46%20PM.png" />
-</p>
-<h1 align="center">
-  Gatsby Landing Page Starter
-</h1>
+## ☁️ A simple one page marketing site starter for SaaS companies and indie hackers.
 
-A simple, minimal, easy-to-use landing page starter without all sorts of bells and whistles bolted on that you'll just have to strip out later. Create a super fast, beautiful landing page from a barebones template with a single page that already looks good.
+[Live Demo: https://gatsby-starter-saas-marketing.netlify.com/ ](https://gatsby-starter-saas-marketing.netlify.com/)
 
-## Prerequisites
+**If you find this starter helpful follow me on <a href="https://www.indiehackers.com/keeg" target="blank">Indie Hackers</a>.**
 
-If you do not have the Gatsby CLI installed yet, do it first.
+<img src="src/images/gatsby-starter-saas-marketing-full-page.png?raw=true" width="600" alt="Gatsby Starter Saas Marketing Full Screen Image"/>
 
-```bash
-npm install --global gatsby-cli
+### Getting started 🍻
+
+install Gatsby CLI - [more info](https://www.gatsbyjs.org/tutorial/part-zero/)
+
+```sh
+npm install -g gatsby-cli
 ```
 
-The Gatsby CLI uses Node and npm which you will also need installed. More information can be found on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one/).
+or
 
-## 🚀 Getting Started
-
-Install the starter using the Gatsby new command.
-
-```bash
-gatsby new landing-page https://github.com/gillkyle/gatsby-starter-landing-page.git
+```sh
+yarn global add gatsby-cli
 ```
 
-Navigate into the project directory and launch the site.
+install the starter locally:
 
-```bash
-cd landing-page && gatsby develop
+```sh
+gatsby new gatsby-starter-saas-marketing https://github.com/keegn/gatsby-starter-saas-marketing
 ```
 
-The site will be opened up in your default browser on http://localhost:8000
+install dependencies:
 
-Edit code in the `/src`, save your changes, and they'll reload instantly in the browser.
+```sh
+yarn install
+```
 
-## 🧐 What's inside?
+start the development server:
 
-The minimal landing page starter comes with a few plugins installed already, but it's main focus is on staying simple and looking clean. These things are included by default:
+```sh
+gatsby develop
+```
 
-- 🖼 Gatsby Image: images added to the `src/images` folder are automatically optimized by the `gatsby-image` plugin and can be pulled into components with lazy loading and blur up effects
-- 📊 Analytics: add your Google Analytics tracking id to `gatsby-config.js` to automatically begin tracking visitors to the site
-- 🗺 Sitemap: any new pages added to the site are automically assembled together into a sitemap through `gatsby-plugin-sitemap`
-- 🎨 Color Theme: the `src/styles/constants.js` file contains a set of colors and default styles that are applied inline to components on the site that can be overriden with your own styles
+At the project root, compile your application for deployment:
 
-## 🧪 Experiment
-
-If you want to try playing with the source code in an online playground you can open the repo in Codesandox with this button.
-
-[![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/gillkyle/gatsby-starter-landing-page/tree/master/)
-
-## 💫 Deploy
-
-If you just want to see a site online real fast you can deploy a copy of the site to Netlify with this button.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gillkyle/gatsby-starter-landing-page)
-
-To create an optimized build of the site run this command
-
-```bash
+```sh
 gatsby build
 ```
 
-A `/public` folder will be assembled that can be deployed to a service like Netlify, Surge, GitHub Pages, AWS S3, Firebase hosting, or your own file server.
+Clean the cache to fix certain errors - run the clean command before starting the dev server:
+
+```sh
+gatsby clean
+```
+
+At the project root, serve the production build of your site:
+
+```sh
+gatsby serve
+```
+
+### Styles
+
+This starter uses [styled-components](https://www.styled-components.com/). The theme file contains the base styles `src/styles/theme.js` and the global styles file contains basic element styles and a style reset `src/styles/GlobalStyles.js`.
+
+### Navigation
+
+This starter uses [react-anchor-link-smooth-scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll#readme) and [react-scrollspy](https://github.com/makotot/react-scrollspy).
+To link a navigation item to a section simply add an id and string value to a section parent element that corresponds to the same navigation string value in `navigation.js`
+<br>
+<br>
+⚠️ Only the `Features` section is linked. Product and Pricing sections are intentionally not linked and will throw a `TypeError` in the console when clicked (because they do not exist in the starter). Please reach out if you want help extending this feature.
+
+### Deploying to Netlify
+
+[Deployment Guide](http://gatsbyjs.org/docs/deploying-to-netlify)
+
+### Collect emails with Netlify Forms
+
+[Form Handling with Gatsby.js V2 and Netlify](https://codebushi.com/form-handling-gatsby-netlify/)
+
+### Netlify form usage example
+
+In `header.js` replacing the existing `<HeaderForm>...</HeaderForm>` components with the following should provide a working example once your site is deployed:
+
+```
+<HeaderForm
+ name="early-access"
+ method="post"
+ data-netlify-honeypot="bot-field"
+ data-netlify="true"
+>
+  <input type="hidden" name="bot-field" />
+  <input type="hidden" name="form-name" value="early-access" />
+  <HeaderInput
+   type="email"
+   placeholder="Your email"
+   name="email"
+   id="email"
+   required
+  />
+  <HeaderButton>Early access</HeaderButton>
+</HeaderForm>
+```
