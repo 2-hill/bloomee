@@ -1,101 +1,46 @@
-## ☁️ A simple one page marketing site starter for SaaS companies and indie hackers.
+# [Tailwind Toolbox](https://www.tailwindtoolbox.com/) - [Rainblur Landing Page Template](https://www.tailwindtoolbox.com/templates/rainblur-landing-page)
 
-[Live Demo: https://gatsby-starter-saas-marketing.netlify.com/ ](https://gatsby-starter-saas-marketing.netlify.com/)
+[Rainblur Landing Page](https://www.tailwindtoolbox.com/templates/rainblur-landing-page) is an open source, dark mode and gradient based generic landing page or coming soon template for [Tailwind CSS](https://tailwindcss.com/) created by [Tailwind Toolbox](https://www.tailwindtoolbox.com/).
 
-**If you find this starter helpful follow me on <a href="https://www.indiehackers.com/keeg" target="blank">Indie Hackers</a>.**
+![Rainblur Landing Page](https://www.tailwindtoolbox.com/templates/rainblur-landing-page.png)
 
-<img src="src/images/gatsby-starter-saas-marketing-full-page.png?raw=true" width="600" alt="Gatsby Starter Saas Marketing Full Screen Image"/>
 
-### Getting started 🍻
+## Getting Started
 
-install Gatsby CLI - [more info](https://www.gatsbyjs.org/tutorial/part-zero/)
+Choose one of the following options to get started:
+* [Download the latest release](https://github.com/tailwindtoolbox/Rainblur-Landing-Page/archive/main.zip)
+* Clone the repo: `git clone https://github.com/tailwindtoolbox/Rainblur-Landing-Page.git`
+* Fork the repo
 
-```sh
-npm install -g gatsby-cli
-```
+## Using the Template
 
-or
+The template is just a HTML file using a full CDN hosted Tailwind CSS file.
 
-```sh
-yarn global add gatsby-cli
-```
+To get the best out of Tailwind CSS, you need to really start customising it.
+Take a look at our [setup guide](https://www.tailwindtoolbox.com/setup) to start tweaking!
 
-install the starter locally:
+## Sites created using this template
 
-```sh
-gatsby new gatsby-starter-saas-marketing https://github.com/keegn/gatsby-starter-saas-marketing
-```
+* Add your site here :)
 
-install dependencies:
 
-```sh
-yarn install
-```
+## Bugs and Issues
 
-start the development server:
+Have a bug or an issue with this template? [Open a new issue](https://github.com/tailwindtoolbox/Rainblur-Landing-Page//issues/new) here on GitHub.
 
-```sh
-gatsby develop
-```
+## Creator
 
-At the project root, compile your application for deployment:
+[Tailwind Toolbox](https://www.tailwindtoolbox.com/) was created by and is maintained by **[Amrit Nagi](https://amritnagi.info/)**, Co-owner of [Astrava.Solutions](https://astrava.solutions).
 
-```sh
-gatsby build
-```
+* https://twitter.com/tailwindtoolbox
+* https://twitter.com/amritnagi
+* https://github.com/tailwindtoolbox
 
-Clean the cache to fix certain errors - run the clean command before starting the dev server:
+Tailwind Toolbox is based on the [Tailwind CSS](https://www.tailwindcss.com/) framework created by [Adam Wathan](https://twitter.com/adamwathan), [Jonathan Reinink](https://twitter.com/reinink), [David Hemphill](https://twitter.com/davidhemphill) and [Steve Schoger](https://twitter.com/steveschoger)
 
-```sh
-gatsby clean
-```
 
-At the project root, serve the production build of your site:
 
-```sh
-gatsby serve
-```
 
-### Styles
+## Copyright and License
 
-This starter uses [styled-components](https://www.styled-components.com/). The theme file contains the base styles `src/styles/theme.js` and the global styles file contains basic element styles and a style reset `src/styles/GlobalStyles.js`.
-
-### Navigation
-
-This starter uses [react-anchor-link-smooth-scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll#readme) and [react-scrollspy](https://github.com/makotot/react-scrollspy).
-To link a navigation item to a section simply add an id and string value to a section parent element that corresponds to the same navigation string value in `navigation.js`
-<br>
-<br>
-⚠️ Only the `Features` section is linked. Product and Pricing sections are intentionally not linked and will throw a `TypeError` in the console when clicked (because they do not exist in the starter). Please reach out if you want help extending this feature.
-
-### Deploying to Netlify
-
-[Deployment Guide](http://gatsbyjs.org/docs/deploying-to-netlify)
-
-### Collect emails with Netlify Forms
-
-[Form Handling with Gatsby.js V2 and Netlify](https://codebushi.com/form-handling-gatsby-netlify/)
-
-### Netlify form usage example
-
-In `header.js` replacing the existing `<HeaderForm>...</HeaderForm>` components with the following should provide a working example once your site is deployed:
-
-```
-<HeaderForm
- name="early-access"
- method="post"
- data-netlify-honeypot="bot-field"
- data-netlify="true"
->
-  <input type="hidden" name="bot-field" />
-  <input type="hidden" name="form-name" value="early-access" />
-  <HeaderInput
-   type="email"
-   placeholder="Your email"
-   name="email"
-   id="email"
-   required
-  />
-  <HeaderButton>Early access</HeaderButton>
-</HeaderForm>
-```
+Copyright 2018-2020 Astrava.Solutions Ltd. Code released under the MIT license.
