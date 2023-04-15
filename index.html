@@ -69,16 +69,29 @@
                 placeholder="email@gmail.com"
               />
             </div>
-
+          
             <div class="flex items-center justify-between pt-4">
               <button
                 class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 type="button"
+                id="signupBtn"
               >
                 Sign Up
               </button>
             </div>
           </form>
+          
+          <script>
+            const signupBtn = document.getElementById('signupBtn');
+            signupBtn.addEventListener('click', sendEmail);
+          
+            function sendEmail() {
+              const email = document.getElementById('emailaddress').value;
+              const typeformUrl = 'https://9ul90jbhc4x.typeform.com/to/xs5nvlQe';
+              const typeformParams = `email=${encodeURIComponent(email)}`;
+              window.location.href = `${typeformUrl}?${typeformParams}`;
+            }
+          </script>
         </div>
 
         <!--Right Col-->
@@ -92,3 +105,5 @@
     </div>
   </body>
 </html>
+
+
